@@ -26,7 +26,7 @@ find_package(yaml_cpp_vendor REQUIRED)
 
 set(GZ_PLUGIN)
 set(GZ_SIM)
-
+set(ENV{GZ_VERSION} "harmonic")
 if("$ENV{GZ_VERSION}" STREQUAL "garden")
   find_package(gz-sim7 REQUIRED)
   set(GZ_SIM_VER ${gz-sim7_VERSION_MAJOR})
